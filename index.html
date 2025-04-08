@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Online Complaint Register</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url(backround3.png);
+        background-size: cover;
+      }
+
+      .container {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+
+      .card {
+        padding: 60px 40px 50px 40px;
+        background: rgb(50, 50, 50);
+        border-radius: 10px;
+      }
+
+      #name {
+        width: 250px;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid white;
+        padding: 6px;
+        margin-bottom: 20px;
+        color: white;
+      }
+
+      #button {
+        border-radius: 20px;
+        padding: 10px 20px;
+        background: dodgerblue;
+        color: white;
+        margin-top: 25px;
+        border: none;
+        outline: none;
+        margin-left: 75px;
+      }
+
+      #button:hover {
+        background-color: rgb(48, 128, 128);
+        cursor: pointer;
+      }
+    </style>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <input type="text" placeholder="Email" id="name" /><br />
+        <input type="text" placeholder="Date of birth" id="name" /><br />
+        <input type="text" placeholder="Username" id="name" /><br />
+        <input type="text" placeholder="Location" id="name" /><br />
+        <input type="text" placeholder="Phone Number" id="name" /><br />
+        <input type="submit" value="Submit" id="button" onclick="success()" />
+      </div>
+    </div>
+  </body>
+</html>
